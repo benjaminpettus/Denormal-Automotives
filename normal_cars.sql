@@ -43,10 +43,22 @@ FROM car_models
 INNER JOIN make ON (car_models.make_code = make.make_code)
 JOIN model_year ON (car_models.year = model_year.year);
 
-SELECT *  
-FROM model;
+-- SELECT *  
+-- FROM model;
 
 
+-- SELECT DISTINCT model_title
+-- FROM model
+-- JOIN make ON (model.make_id = make.id)
+-- WHERE make_code LIKE '%VOLKS%';
+
+-- SELECT DISTINCT make_code, model_code, model_title, year
+-- FROM car_models
+-- WHERE make_code LIKE '%LAM%';
+
+SELECT *
+FROM car_models
+WHERE year BETWEEN 2010 AND 2015;
 
 
 
