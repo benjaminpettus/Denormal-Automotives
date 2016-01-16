@@ -17,14 +17,14 @@ CREATE DATABASE denormal_cars OWNER denormal_user;
 -- FROM car_models[]
 -- WHERE make_code LIKE '%LAM%';
 
-SELECT *
-FROM car_models
-WHERE year BETWEEN 2010 AND 2015;
+-- SELECT *
+-- FROM car_models
+-- WHERE year BETWEEN 2010 AND 2015;
 
 
 -- CREATE TABLE year (
 -- ID SERIAL PRIMARY KEY NOT NULL,
--- year INT DEFAULT NOT NULL
+-- year = car_models(year)
 -- );
 
 -- CREATE TABLE make_code (
